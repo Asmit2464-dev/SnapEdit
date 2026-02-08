@@ -6,8 +6,8 @@ It allows users to upload images, apply real-time filters and presets, preview c
 ---
 
 ## 🚀 Live Demo
-👉 *(Add GitHub Pages link here after deployment)*  
-Example: `https://your-username.github.io/snapedit/`
+👉 https://asmit2464-dev.github.io/SnapEdit/
+
 
 ---
 
