@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+.app {
+  max-width: 1100px;
+  margin: auto;
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.upload {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.editor {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.preview {
+  flex: 1;
+  background: #020617;
+  padding: 15px;
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+}
+
+.preview img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.preview span {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.controls {
+  flex: 1;
+  background: #020617;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.controls h3 {
+  margin-bottom: 10px;
+}
+
+.controls label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.controls input {
+  width: 100%;
+}
+
+.presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.presets button {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.presets button:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions button {
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.reset {
+  background: #ef4444;
+  color: white;
+}
+
+.download {
+  background: #22c55e;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.6;
+}
+
+canvas {
+  display: none;
+}
+

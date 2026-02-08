@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SnapEdit – Image Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>SnapEdit</h1>
+  <p>Upload, edit & download images instantly</p>
+</header>
+
+<main class="app">
+
+  <section class="upload">
+    <input type="file" id="upload" accept="image/*">
+  </section>
+
+  <section class="editor">
+
+    <div class="preview">
+      <img id="image" alt="">
+      <span>Live Preview</span>
+    </div>
+
+    <div class="controls">
+
+      <h3>Adjustments</h3>
+
+      <label>Brightness <input type="range" id="brightness" min="0" max="200" value="100"></label>
+      <label>Contrast <input type="range" id="contrast" min="0" max="200" value="100"></label>
+      <label>Saturation <input type="range" id="saturation" min="0" max="200" value="100"></label>
+      <label>Grayscale <input type="range" id="grayscale" min="0" max="100" value="0"></label>
+      <label>Blur <input type="range" id="blur" min="0" max="10" value="0"></label>
+      <label>Sepia <input type="range" id="sepia" min="0" max="100" value="0"></label>
+      <label>Hue Rotate <input type="range" id="hue" min="0" max="360" value="0"></label>
+      <label>Invert <input type="range" id="invert" min="0" max="100" value="0"></label>
+      <label>Opacity <input type="range" id="opacity" min="10" max="100" value="100"></label>
+
+    </div>
+
+  </section>
+
+  <section class="presets">
+    <button onclick="applyPreset('vintage')">Vintage</button>
+    <button onclick="applyPreset('bw')">B & W</button>
+    <button onclick="applyPreset('warm')">Warm</button>
+    <button onclick="applyPreset('cool')">Cool</button>
+    <button onclick="applyPreset('dramatic')">Dramatic</button>
+    <button onclick="applyPreset('fade')">Fade</button>
+    <button onclick="applyPreset('insta')">Instagram</button>
+  </section>
+
+  <section class="actions">
+    <button class="reset" onclick="resetFilters()">Reset</button>
+    <button class="download" onclick="downloadImage()">Download</button>
+  </section>
+
+</main>
+
+<footer>
+  <p>Built with HTML, CSS & JavaScript</p>
+</footer>
+
+<canvas id="canvas"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
+
